@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vuepress dev docs --temp .temp",
     "build": "vuepress build docs",
-    "newDoc": "node scripts/newDoc.js common loading"
+    "newDoc": "node scripts/newDoc.js common jk-popup-dialog"
   },
   "keywords": [],
   "author": "",
@@ -18,7 +18,9 @@
     "lodash": "^4.17.21",
     "path": "^0.12.7",
     "sass": "^1.43.4",
-    "sass-loader": "8.0.0",
+    "sass-loader": "10.1.1",
+    "scss": "^0.2.4",
+    "scss-loader": "^0.0.1",
     "vant": "^2.12.31",
     "vuepress": "^1.8.2",
     "vuepress-plugin-demo-container": "^0.2.0"

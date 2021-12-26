@@ -1,5 +1,12 @@
 ---
 home: true
+heroImage: http://wodan-idc.oss-cn-hangzhou.aliyuncs.com/shijianke-web-new/prod/website/img/jianke_logo_2.png
+heroText: 兼客VuePress文档
+footer: by Young Flower
+---
+
+<!-- ---
+home: true
 heroImage: https://artice-code-1258339218.cos.ap-beijing.myqcloud.com/vuepress/element-index.png
 heroText: Element
 features:
@@ -10,9 +17,9 @@ features:
 - title: 效率 Efficiency
   details: 界面简单直白，让用户快速识别而非回忆，减少用户记忆负担。
 footer: by饿了么
----
+--- -->
 
-### 设计原则
+<!-- ### 设计原则
 
 <div style="display:flex;justify-content: space-between;padding-bottom:40px">
   <div style="display: flex;flex-direction: column;align-items: center;">
@@ -35,4 +42,4 @@ footer: by饿了么
     <p style="margin:5px">可控</p>
     <p style="margin:0px;font-size: 12px;color:#666">Controllability</p>
   </div>
-</div>
+</div> -->

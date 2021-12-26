@@ -3,7 +3,8 @@ import Vant from 'vant';
 import ElementUI from 'element-ui';
 import 'vant/lib/index.css';
 import 'element-ui/lib/theme-chalk/index.css'
-// import loadingCom from '../components/loading-com.vue'
+import './public/styles/index.scss'
+
 import {
   componentName,
   componentConfig
@@ -14,6 +15,8 @@ export default async ({
   if (typeof process === 'undefined') {
     Vue.use(ElementUI)
     Vue.use(Vant)
-    Vue.component(componentName, componentConfig.default || componentConfig)
+    componentName.forEach((item, index) => {
+      Vue.component(item, componentConfig[index].default || componentConfig[index])
+    })
   }
 }

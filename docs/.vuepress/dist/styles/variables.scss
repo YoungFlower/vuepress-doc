@@ -1,0 +1,30 @@
+$mc1:#13BFA8;
+$mc2:#FF983F;
+$mc3:#DCE0E0;
+$mc4:#e6e6e6;
+$mc5:#F7F8F8;
+$tc1:#333333;
+$tc2:#969999;
+$tc3:#B4B8B8;
+$cbtn:#FFFFFF;
+$fs0:20px;
+$fs1:18px;
+$fs2:16px;
+$fs3:14px;
+$fs4:13px;
+$fs5:12px;
+$ppd:30px;
+$pbc:$mc5;
+
+:export {
+  mc1: $mc1;
+  mc2: $mc2;
+  mc3: $mc3;
+  mc4: $mc4;
+  mc5: $mc5;
+  tc1: $tc1;
+  tc2: $tc2;
+  tc3: $tc3;
+  pbc: $pbc;
+  cbtn: $cbtn;
+}

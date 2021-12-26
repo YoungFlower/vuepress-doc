@@ -33,22 +33,32 @@
     "sidebar": {
       "/doc-type/common/": [
         "/doc-type/common/",
-        "/doc-type/common/loading.md"
+        "/doc-type/common/loading.md",
+        "/doc-type/common/jk-ad-item.md",
+        "/doc-type/common/jk-no-data.md"
       ],
       "/doc-type/element-ui/": [
         "/doc-type/element-ui/"
       ],
       "/doc-type/vant/": [
-        "/doc-type/vant/"
+        "/doc-type/vant/",
+        "/doc-type/vant/jk-popup-dialog.md"
       ]
-    },
-    "configureWebpack": {
-      "resolve": {
-        "alias": {
-          "@": "docs/components"
-        }
+    }
+  },
+  "configureWebpack": {
+    "resolve": {
+      "alias": {
+        "@": "/docs/components",
+        "@style": "/docs/.vuepress/public/styles"
       }
     }
+  },
+  "sassOptions": {
+    "indentedSyntax": true
+  },
+  "scss": {
+    "additionalData": "@import '@style/variables.scss';"
   },
   "markdown": {}
 }

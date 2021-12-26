@@ -1,0 +1,211 @@
+@import './variables.scss';
+@import './flex.scss';
+
+
+body {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: PingFangSC-Regular, PingFang SC, Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+}
+
+html {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+#app {
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+view,
+scroll-view,
+swiper,
+swiper-item,
+cover-view,
+cover-image,
+icon,
+text,
+rich-text,
+progress,
+button,
+checkbox,
+form,
+input,
+label,
+radio,
+slider,
+switch,
+textarea,
+navigator,
+audio,
+camera,
+image,
+video {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration-line: none;
+  cursor: pointer;
+}
+
+// .icon {
+//   width: 1em;
+//   height: 1em;
+//   vertical-align: -0.15em;
+//   fill: currentColor;
+//   overflow: hidden;
+// }
+
+// 模拟手机宽高设置上层为相对定位父级
+.van-overlay,
+.van-popup {
+  position: absolute;
+}
+
+.page-div {
+  position: relative;
+}
+
+.text-ellipsis {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.btn-large {
+  width: 90%;
+  margin: 26rpx auto;
+  height: 44px;
+  background: $mc1;
+  border-radius: 5px;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 1);
+  line-height: 44px;
+  text-align: center;
+}
+
+
+.link {
+  color: $mc1;
+}
+
+.cursor-hand {
+  cursor: pointer;
+}
+
+.no-more-data {
+  color: $tc3;
+  font-size: 14px;
+  line-height: 50px;
+  text-align: center;
+  background-color: $pbc;
+}
+
+.page-container {
+  padding: 30rpx;
+  padding-bottom: 32rpx;
+  background-color: $pbc;
+  min-height: 100vh;
+  width: 100vw;
+
+
+}
+
+.title-1 {
+  font-size: $fs1;
+  font-weight: 600;
+  color: $tc1;
+  line-height: $fs1;
+}
+
+.title-2 {
+  font-size: $fs2;
+  font-weight: 500;
+  color: $tc1;
+  line-height: $fs2;
+}
+
+.card {
+  width: 100%;
+  background: #FFFFFF;
+  border-radius: 16rpx;
+  padding: 32rpx;
+}
+
+.b16 {
+  border-radius: 16rpx;
+}
+
+.gray-line {
+  width: 100%;
+  height: 2rpx;
+  background: $mc5;
+}
+
+button::after {
+  border: none;
+
+}
+
+.icon-img {
+
+  img,
+  image {
+    width: 28rpx;
+    height: 28rpx;
+  }
+}
+
+.btn-big {
+  width: 690rpx;
+  height: 88rpx;
+  text-align: center;
+  background: $mc1;
+  border-radius: 44rpx;
+  font-size: 32rpx;
+  font-weight: 600;
+  color: #FFFFFF;
+  line-height: 88rpx;
+}
+
+.btn-big-disable {
+  width: 690rpx;
+  height: 88rpx;
+  text-align: center;
+  background: #DCE0E0;
+  border-radius: 44rpx;
+  font-size: 32rpx;
+  font-weight: 600;
+  color: #FFFFFF;
+  line-height: 88rpx;
+}
+
+.relative {
+  position: relative;
+}
+
+.open-type {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  top: 0;
+  left: 0;
+}

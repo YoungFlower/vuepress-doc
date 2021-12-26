@@ -15,10 +15,10 @@ let componentNameTemp = []
 let componentConfigTemp = []
 requireComponent.keys().forEach(fileName => {
   // 获取组件配置
-  componentConfigTemp = requireComponent(fileName)
+  componentConfigTemp.push(requireComponent(fileName))
 
   // 获取组件的 PascalCase 命名
-  componentNameTemp = upperFirst(
+  componentNameTemp.push(upperFirst(
     camelCase(
       // 获取和目录深度无关的文件名
       fileName
@@ -26,8 +26,10 @@ requireComponent.keys().forEach(fileName => {
       .pop()
       .replace(/\.\w+$/, '')
     )
-  )
+  ))
 })
+
+
 
 export const componentName = componentNameTemp
 export const componentConfig = componentConfigTemp
